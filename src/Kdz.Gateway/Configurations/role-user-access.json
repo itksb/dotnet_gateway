@@ -1,0 +1,45 @@
+{
+  "RoleUserAccess": {
+    "roles": [
+      {
+        "name": "admin",
+        "users": [
+          {
+            "name": "admin",
+            "password": "password"
+          },
+          {
+            "name": "admin2",
+            "password": "password2"
+          }
+        ],
+        "access_urls": [
+          "/{**catch-all}"
+        ]
+      },
+      {
+        "name": "group1",
+        "users": [
+          {
+            "name": "group_1",
+            "password": "group_1"
+          }
+        ],
+        "access_urls": [
+          [
+            "We can comment pathes in json like this, because arrays not processed by matcher."
+          ],
+          "/path/to",
+          [
+            "We can use templates according to docs, see https://docs.microsoft.com/en-us/aspnet/core/fundamentals/routing?view=aspnetcore-6.0#route-templates"
+          ],
+          "/path/to/{**catch-all}",
+          [
+            "Allow root page:"
+          ],
+          "/{Page=Home}"
+        ]
+      }
+    ]
+  }
+}

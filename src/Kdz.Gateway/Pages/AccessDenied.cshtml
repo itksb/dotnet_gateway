@@ -1,0 +1,15 @@
+@page
+@model Kdz.Gateway.Pages.AccessDenied
+
+@{
+    HttpContext.Response.StatusCode = Microsoft.AspNetCore.Http.StatusCodes.Status403Forbidden;
+}
+
+<div>
+    <h3>Доступ к ресурсу закрыт.</h3>
+    <div class="row">
+        <p>Для получения доступа, обратитесь к администратору.</p>
+
+    </div>
+
+</div>

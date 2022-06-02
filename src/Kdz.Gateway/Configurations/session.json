@@ -1,0 +1,9 @@
+{
+  "Session": {
+     "Cookie": {
+       "HttpOnly": true,
+       "IsEssential": true,
+       "Name": "kdz"
+     }
+  }
+}

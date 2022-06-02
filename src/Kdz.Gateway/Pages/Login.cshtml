@@ -1,0 +1,31 @@
+@page
+@using Microsoft.AspNetCore.Components.Forms
+@model Kdz.Gateway.Pages.LoginModel
+
+<h3>Авторизация</h3>
+
+<div class="container border" style="padding: 20px;">
+
+    <form method="post" asp-antiforgery="true">
+
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="text-warning">@Html.ValidationMessage("Authentication")</div>
+
+        <div class="mb-3">
+            <label asp-for="Credential.UserName" class="form-label col-form-label-lg"></label>
+            <input type="text" class="form-control form-control-lg" asp-for="Credential.UserName" placeholder="login">
+            <span class="text-danger form-text" asp-validation-for="Credential.UserName"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Credential.Password" class="form-label col-form-label-lg"></label>
+            <input type="password" asp-for="Credential.Password" class="form-control form-control-lg" placeholder="******">
+            <span class="text-danger form-text" asp-validation-for="Credential.Password"></span>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Войти</button>
+        </div>
+
+    </form>
+
+</div>

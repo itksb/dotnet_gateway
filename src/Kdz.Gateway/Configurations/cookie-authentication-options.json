@@ -1,0 +1,11 @@
+{
+  "CookieAuthenticationOptions": {
+    "Cookie": {
+      "CookieHttpOnly": true,
+      "Name": "karapuz"
+    },
+    "LoginPath": "/login",
+    "LogoutPath": "/logout",
+    "AccessDeniedPath": "/accessdenied"
+  }
+}
