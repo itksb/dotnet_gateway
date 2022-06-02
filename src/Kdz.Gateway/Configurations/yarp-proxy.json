@@ -6,13 +6,7 @@
         "Match": {
           "Path": "/{**catch-all}"
         },
-        "AuthorizationPolicy": "accessUrlPolicy",
-        "Transforms": [
-          {
-            "RequestHeader": "Authorization",
-            "Set": "Basic Y2FyZGlvOnZpcnR1YWw="
-          }
-        ]
+        "AuthorizationPolicy": "accessUrlPolicy"
       }
     },
     "Clusters": {
